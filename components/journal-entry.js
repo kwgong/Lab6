@@ -98,7 +98,7 @@ class JournalEntry extends HTMLElement {
       entryImage.src = entry.image.src;
       entryImage.alt = entry.image.alt;
 
-      let ent = this.shadowRoot.querySelector(".entry-content");
+      let ent = this.shadowRoot.querySelector(".entry");
       ent.appendChild(entryImage);
 
 
@@ -131,7 +131,7 @@ class JournalEntry extends HTMLElement {
       entryAudio.src = entry.audio;
       entryAudio.controls = true;
 
-      let ent = this.shadowRoot.querySelector(".entry-content");
+      let ent = this.shadowRoot.querySelector(".entry");
       ent.appendChild(entryAudio);
 
 
